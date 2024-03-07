@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Utilizando Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Estas podem ser ordenadas por letras maiúsculas ou minúsculas <strong>(A / a)</strong>, por números romanos <strong>(I)</strong> ou por numeração comum <strong>(1)</strong>. </p>
+    <p>Para definir quaisquer tipo, basta atribuir ao atributo "type" da tag &lt;ol&gt; o valor entre parênteses. Também pode ser definido seu início atribuindo a partir de qual item se iniciará a contagem para o atributo "start". A seguir alguns exemplos:</p>
+    <!--Numeração padrão-->
+    <ol>
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
+    </ol>
+    <!--Ordenada por letras minúsculas e maiúsculas-->
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <!--Ordenada por algarismos romanos-->
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="i">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <p>Exemplo definindo início no item 25:</p>
+    <!--Numeração padrão-->
+    <ol type="1" start="25">
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
+    </ol>
+    <!--Ordenada por letras minúsculas e maiúsculas-->
+    <ol type="A" start="25">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="a" start="25">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <!--Ordenada por algarismos romanos-->
+    <ol type="I" start="25">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="i" start="25">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    
+    <h2>Listas Não Ordenadas</h2>
+    <p>Listas não ordenada (padrão type="disc"):</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p>Listas não ordenada (type="circle"):</p>
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p>Listas não ordenadas (type="square"):</p>
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Juntando Listas</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>Lista de Definição</dt>
+        <dd>Como se fosse um dicionário, listagem de um termo (dt) seguido de uma definição (dd).</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilização para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+
+    </dl>
+</body>
+</html>

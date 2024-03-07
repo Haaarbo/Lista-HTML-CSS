@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <p>Vai aparecer uma imagem, com a tag usada acima chamada de tag <strong>&lt;picture&gt;</strong>. Nela, é possível usar mais de um "src", com alguns parâmetros específicos.</p>
+    
+    <pre><code>&lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="../imagens/foto-p.png" type="image/png"&gt;
+        &lt;source media="(max-width: 1050px)" srcset="../imagens/foto-m.png" type="image/png"&gt;
+        &lt;img src="../imagens/foto-g.png" alt="Imagem flexível"&gt;
+        &lt;picture&gt;</code></pre>
+    
+        <p>Explicando o código acima, a tag <ins>picture</ins> nos permite alterar a imagem dependendo do contexto, no caso definido pelo tamanho máximo abordado (max-width ou largura máxima).</p>
+        <p>No caso de até 750px, usa-se foto-p</p>
+        <p>No caso de até 1050px, usa-se foto-m</p>
+        <p>No caso de até mais de 1050px, usa-se foto-g</p>
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio src="midia/july_john_patitucci.mp3" controls autoplay></audio>
+
+        <!--MP3 WAV OGG-->
+        <p>Outra forma de se adicionar áudio:</p>
+        
+        <p>
+            atributo preload => auto, metadata e none
+            
+            auto ou vazio => só considera que tudo foi carregado quando o áudio também terminar de carregar, perigoso
+            
+            metadata => exibe inicialmente mais o básico, como duração, data, carrega primeiro coisas mais simples
+            
+            none => nada é carregado, apenas quando o usuário apertar o play nos controles
+        </p>
+
+        
+        <pre><code>
+                &lt;audio preload="metadata" autoplay controls&gt;
+                    &lt;source src="../midia/july_john_patitucci.mpeg" type="audio/mpeg"&gt;
+                    &lt;source src="../midia/july_john_patitucci.ogg" type="audio/ogg"&gt;
+                    &lt;source src="../midia/july_john_patitucci.wav" type="audio/wav"&gt;
+            
+                    &lt;p&gt;Se nenhuma das mídias acima funcionar,&lt;a href="../midia/july_john_patitucci.mp3"&gt;clique aqui para baixar o arquivo MP3.&lt;/a&gt;&lt;/p&gt;
+                &lt;/audio&gt;
+            </code></pre>
+        
+
+        <audio preload="metadata" autoplay controls>
+            <source src="midia/july_john_patitucci.mpeg" type="audio/mpeg">
+            <source src="midia/july_john_patitucci.ogg" type="audio/ogg">
+            <source src="midia/july_john_patitucci.wav" type="audio/wav">
+        </audio>
+        <p>Se nenhuma das mídias acima funcionar,<a href="midia/july_john_patitucci.mp3" download="july_john_patitucci.mp3">clique aqui para baixar o arquivo MP3.</a></p>
+    </body>
+</html>

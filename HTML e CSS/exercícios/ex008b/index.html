@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>Tag &lt;code&gt; &rarr; O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.</p>
+    <p>O código a seguir é um código Python usando a tag &lt;code&gt; junto da tag &lt;pre&gt;, esta que reconhece os espaçamentos e quebras de linhas definidos nas marcações do HTML: </p>
+    <pre>
+        <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+    <em>
+        <p>Como diria o narrador de futebol: <q>Quem não faz, leva.</q></p>
+    </em>
+    <p>Importante perceber que foi usado a tag &lt;q&gt;, que em <strong>FORMA</strong> apenas adicionou as aspas, mas reiterando exercícios anteriores, é uma tag importante para trazer <strong>SIGNIFICADO</strong> a alguns elementos do texto.</p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Fulano e Ciclano de Tal:</p>
+    <blockquote cite="link para fonte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae aliquid corrupti laudantium, repellat sit enim atque reiciendis voluptatem tenetur, libero, voluptatum cupiditate! Maxime ratione qui est, atque ea culpa vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe rem sint mollitia quisquam ipsam, architecto doloribus officiis? Repellendus autem earum sunt beatae praesentium saepe voluptatibus architecto ducimus expedita ea.</blockquote>
+    <p>No exemplo acima, foi feita uma citação completa, com o texto levemente deslocado à direita, com a tag &lt;blockquote&gt;. Esta tag também possui um parâmetro "cite", o qual é possível atribuir o que os mecanismos de busca entenderão como fonte da sua citação, como link para algum livro ou site, por exemplo.</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e está muito divertido!</p>
+    <p>No texto acima, usou-se a tag &lt;abbr&gt; que possibilita ver o significado a sigla ao passar o mouse sobre o termo. Possui um atributo "title" para adicionar o significado da abreviação.</p>
+    <h2>Texto invertido</h2>
+    <p>Utiliza-se a tag &lt;bdo&gt; para inversão de texto, com o atributo "dir", onde é possível atribuir o valor <strong>ltr</strong> (left-to-right / esquerda para direita) ou <strong>rtl</strong> (right-to-left / direita para esquerda). Exemplo:</p>
+    <p><bdo dir="ltr">Texto invertido</bdo> (ltr)</p>
+    <p><bdo dir="rtl">Texto invertido</bdo> (rtr)</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
+    <p>Já nesta outra frase, temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+    <h3>Qual a diferença?</h3>
+    <p>A diferença está na <strong>SEMÂNTICA</strong>. Nesta versão do HTML5, a linguagem tem buscado o caminho de ser mais semântico, tem priorizado o <strong>significado</strong> da tag para com o texto do que sua <strong>forma</strong>.</p>
+    <p>Nos exemplos do começo, ambos possuem a mesma forma, já que ambas permitem o texto ficar em negrito; no entanto, enquanto a tag &lt;b&gt; foca apenas na forma, a de deixar em negrito, a &lt;strong&gt; traz um valor semântico, ela valoriza a ideia de dar destaque a algum texto, não se resumindo a simplesmente deixar o texto em negrito.</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt;.</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt;.</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar um <mark>texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+    <p>Nesta frase também há um <mark style="background-color: cyan;">texto marcado pela cor ciano</mark> e <mark style="background-color: rgb(235, 68, 88);">outro pela cor carmesim</mark>.</p>
+    <p>É possível também usar o seguinte código em HTML dentro do &lt;head&gt; para customizar a cor de um mark:
+        <br>
+        <br>
+        <em>&lt;style&gt;<br>
+            <strong>mark</strong>{<br>
+            background-color: _cor_ <br>
+            } <br>
+            &lt;/style&gt;<br></em>
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>, usando as tags &lt;big&gt; e &lt;small&gt; (ambas não são semânticas, mas apenas o &lt;big&gt; está em desuso por enquanto)</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado. Este com a tag &lt;del&gt; (semântico).</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para indicar ênfase e indicar que ele foi adicionado posteriormente, usando a tag &lt;ins&gt; (semântico).</p>
+    <p>Há também como usar a tag &lt;u&gt; para a mesma função de marcar um <u>texto como inserido</u>, porém <strong>não carrega valor semântico e ,portanto, não é recomendado seu uso.</strong></p>
+    <h2>Texto sobrescrito e subscrito</h2>
+    <p>Para textos sobrescritos: x<sup>2</sup>+3</p>
+    <p>Para textos subscritos: H<sub>2</sub>O</p>
+
+</body>
+</html>
