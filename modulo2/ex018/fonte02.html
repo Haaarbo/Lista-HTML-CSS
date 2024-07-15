@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com Fontes Externas</title>
     <style>
-        @font-face{
-            font-family: ;
-            src: url();
+        @font-face{ /*DEFINIÇAÕ + IMPORTAÇÃO DA FONTE BAIXADA*/
+            font-family: 'Cafe';
+            src: url('fonts/This Cafe.otf') format('opentype'), url('fonts/This Cafe.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+
         }
 
         body{
@@ -15,8 +18,12 @@
         }
 
         h1{
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Cafe', Courier, monospace;
             font-size: 3em;
+        }
+
+        h2{
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 </head>
@@ -31,7 +38,7 @@
         </ins>
     </ul>
     <h2>Formatos de Fontes</h2>
-    <p>As fontes possuem alguns formatos que podem ser encontrados ao baixar: .rtf, .ttf</p>
+    <p>As fontes possuem alguns formatos que podem ser encontrados ao baixar: .otf, .ttf, embedded-opentype, truetype-aat, svg, etc. Alguns navegadores trabalham melhor com outros tipos de fonte.</p>
     
     
     <h1>Título</h1>
