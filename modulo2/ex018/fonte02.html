@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes Externas</title>
+    <style>
+        @font-face{ /*DEFINIÇAÕ + IMPORTAÇÃO DA FONTE BAIXADA*/
+            font-family: 'Cafe';
+            src: url('fonts/This Cafe.otf') format('opentype'), url('fonts/This Cafe.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'Cafe', Courier, monospace;
+            font-size: 3em;
+        }
+
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>No exercício anterior, foi possível trabalhar com fontes gratuitas diretamente do site <em>Google Fonts</em>, no entanto, algumas vezes podemos nos deparar com situações nas quais a fonte necessária não está no site.</p>
+    <p>Alguns sites alternativos que podemo suprir nossa necessidade são:</p>
+    <ul>
+        <ins>
+            <li><a href="https://www.dafont.com/pt/">Dafont.com</a></li>
+            <li><a href=""></a></li>
+        </ins>
+    </ul>
+    <h2>Formatos de Fontes</h2>
+    <p>As fontes possuem alguns formatos que podem ser encontrados ao baixar: .otf, .ttf, embedded-opentype, truetype-aat, svg, etc. Alguns navegadores trabalham melhor com outros tipos de fonte.</p>
+    
+    
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo dignissimos a magnam, at ipsum labore odio consequatur aspernatur. Mollitia soluta consectetur temporibus incidunt minima harum eius aliquam corrupti nesciunt.</p>
+    <h2>Sub-título</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores iure ratione dolore in blanditiis voluptatum dignissimos, magnam, laborum atque, sed debitis! Dolor accusantium eius cupiditate necessitatibus vero voluptate enim!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt natus asperiores laudantium dicta necessitatibus alias deserunt quis velit quasi. Tenetur voluptatum magnam magni molestias repudiandae ad nihil expedita dolor dolores.</p>
+</body>
+</html>

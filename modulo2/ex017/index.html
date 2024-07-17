@@ -9,26 +9,38 @@
             font-family: Arial, Helvetica, sans-serif;
             /*
             Alturas Absolutas
-            cm, mm, in, px, pt, pc
+            cm, mm, in, *px, pt, pc
             
             Medidas Relativas
-            em -> relativa ao tamanho atual da fonte, ao  M da fonte
+            *em -> relativa ao tamanho atual da fonte, ao  M da fonte
             ex -> relativa à altura X da fonte
-            rem -> tipo em, só que relativo ao root, à fonte que ta configurada no body
-            vw -> largura(%) da viewport, tamanho da tela
+            rem -> relativa ao root, elemento raiz?
+            vw -> porcentagem da LARGURA da viewport, da tela do dispositivo
+            vh -> porcentagem da ALTURA da viewport
+            % -> percentual
             
+            * são as recomendadas pela W3C
             */
+            font-size: 1em;
+            
         }
 
         h1{
-            /*font-style ; font-weight; font- size; font-family*/
-            font: italic bolder 3em 'Work Sans', sans-serif;
-            /*definindo todos os parâmetros da fonte em h1*/
+            /*font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 3em;
+            text-decoration: underline;*/
+
+            /*shorthand font:
+            style + weight sizer + family;*/
+            font: italic bold 3em arial;
         }
 
         h2{
-            font-family: 'Times New Roman', Times, serif;
-            /*definindo especificamente o parâmetro font-family de h2*/
+            font: italic lighter 2em times;
+            text-decoration: underline;
+            
         }
     </style>
 </head>
