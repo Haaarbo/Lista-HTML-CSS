@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.hover{
+    background-color: lightgray;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+/*div é a tag que usamos no HTML
+dov:hover é a pseudo-classe, que é uma confiugação de estado
+
+isso significa que só vai acontecer ao atingir algum estado, no caso, se passar o mouse em cima do elemento*/
+div:hover{
+    background-color: yellow;
+}
+
+div > p{ /*SIGNIFICA TODOS OS p FILHOS DE div*/
+    display: none; /*nao sera mostrado*/
+}
+
+div:hover > p{ /*significa: ao passar o texto sobre o paragrafo que sao filhos da div*/
+    display: block; /*vai mostrar o texto escondido*/
+    color: red;
+}
+
+/*
+#div1{
+    background-color: blue;
+}
+
+#div2{
+    background-color: red;
+}
+
+#div3{
+    background-color: green;
+}
+
+*/
