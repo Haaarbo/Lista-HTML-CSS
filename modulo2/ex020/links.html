@@ -4,13 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linka</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZADOS:
+            # == id
+            . == class
+            : == pseudo-class
+            :: == pseudo-element
+            > == children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{ /*pseudo-classe caso tenha sido visitado*/
+            color: darkred;
+        }
+
+        a:hover{/*pseudo-classe caso tenha passado o mouse pelo elemento*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{ /*pseudo-classe caso o elemento tenha sido clicado, no ato*/
+            color: yellow;
+        }
+
+        .especial{
+            color: white;
+            background-color: red;
+        }
+
+        .especial::after{ /*exemplo de um pseudo-elemento, afetam no conteúdo em si, neste caso, vai afetar no que vai aparecer em seguida do elemento a*/
+            content:' <- ';
+        }
+
+        .especial::before{
+            content: ' -> ';
+        }
+    </style>
 </head>
 <body>
     <h1>Personalizando Links</h1>
+    <p>Aqui, nós abordamos e vemos alguns exemplos de uso com pseudo-elementos. Estes se assemelham com as pseudo-classes, mas eles alteram em si a forma, o conteúdo apresentado. Um exemplo a seguir:</p>
     <ul>
-        <li><a href="https://github.com/Haaarbo" target="_blank">Repositório Github</a></li>
+        <li><a href="https://github.com/Haaarbo" target="_blank" class="especial">Repositório Github</a></li>
         <li><a href="https://www.linkedin.com/in/abrahao0707/" target="_blank">Linkedin</a></li>
     </ul>
     <a href="hover.html">Voltar</a>
+    <p>O conteúdo acima tem dois links, mas um está apresentado de forma diferente. Enquanto o segundo está apenas com formatação de cor e em negrito, o acima, caracterizado no <code>&lt;style&gt;</code> com classe "especial", foi alterada sua forma em alguns sentidos.</p>
+    <p>
+        Aplicado fundo vermelho e letra branca na classe, e com o uso dos pseudo-elementos <em>a::before</em> e <em>a::after</em>, foi <strong>alterado o seu conteúdo</strong>, sendo adicionado as setinhas para, neste caso, dar destaque ao link e querer dizê-lo como "especial" de fato.
+    </p>
 </body>
 </html>
